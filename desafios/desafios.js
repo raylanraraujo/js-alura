@@ -13,6 +13,6 @@ alert(mensagemDeErro);
 let seuNome = prompt('Qual o seu nome?')
 let suaIdade = prompt('Digite sua idade')
 
-if ( suaIdade > 18){
+if ( suaIdade >= 18){
     alert('Pode tirar habilitação')
 }
