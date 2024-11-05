@@ -1,6 +1,6 @@
 //---------------Desafio 6---------------------
 let escrevaNome = prompt('Digite seu nome');
-alert('Bem-vindo ' + escrevaNome)
+alert('Bem-vindo ' + escrevaNome);
 
 //---------------Desafio 5----------------------
 let saldo = 100;
@@ -9,25 +9,25 @@ alert(`O saldo da conta é ${saldo}`);
 //---------------Desafio 4----------------------
 let pontuacao = prompt('Digite sua pontuação');
 if (pontuacao >= 100){
-    alert('Parabéns, você venceu!')
+    console.log('Parabéns, você venceu!');
 } else {
-    alert('Tente novamente para ganhar.')
+    console.log('Tente novamente para ganhar.');
 }
 
 //---------------Desafio 3----------------------
 let parOuImpar = prompt('Digite um número');
 if ( parOuImpar > 0){
-    alert('O número é positivo')
+    alert('O número é positivo');
 } else {
-    alert('O número é negativo')
+    alert('O número é negativo');
 }
 
 //---------------Desafio 2----------------------
 let fimDeSemana = prompt('Qual é o dia da semana?');
 if ( fimDeSemana=='Sábado' || fimDeSemana=='Domingo'){
-    alert('Bom fim de semana')
+    alert('Bom fim de semana');
 } else {
-    alert('Boa semana')
+    alert('Boa semana');
 }
 
 //---------------Desafio 1----------------------
