@@ -10,8 +10,8 @@ while (chute != numeroSecreto){
 
     //se o chute for igual ao número secreto
     if (chute == numeroSecreto) {
-        // Template string é a junção de textos com valores de variáveis. Essa é uma das maneiras de fazer isso em JavaScript
-        alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
+        break;
+       
     } else {
         if (chute > numeroSecreto){
             alert(`O número secret é menor que o ${chute}`);
@@ -21,4 +21,11 @@ while (chute != numeroSecreto){
     }
     //tentativas = tentativas + 1
     tentativas++
+}
+
+if ( tentativas > 1) {
+    // Template string é a junção de textos com valores de variáveis. Essa é uma das maneiras de fazer isso em JavaScript
+    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
+} else {
+    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa`);
 }
