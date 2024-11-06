@@ -1,3 +1,40 @@
+//---------------Desafio 10---------------------
+let numero = prompt ('Digite um número');
+let contador4 = 0;
+
+while (contador4<=numero){
+    console.log (contador4);
+    contador4++
+}
+
+
+
+//---------------Desafio 9---------------------
+let contador3 = prompt('Digite um número')
+
+while (contador3 >=0) {
+    console.log(contador3);
+    contador3--
+}
+
+
+//---------------Desafio 8---------------------
+let contador2 = 10;
+
+while (contador2 >=0) {
+    console.log(contador2);
+    contador2--
+}
+
+//---------------Desafio 7---------------------
+let contador1 = 1;
+
+while (contador1 < 11){
+    console.log(contador1);
+    contador1++
+}
+
+
 //---------------Desafio 6---------------------
 let escrevaNome = prompt('Digite seu nome');
 alert('Bem-vindo ' + escrevaNome);
