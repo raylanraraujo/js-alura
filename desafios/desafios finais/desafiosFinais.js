@@ -50,3 +50,12 @@ alert(`A média das notas ${nota1} e ${nota2} é ${media}`);
 
 let situacao = media >= 7 ? 'APROVADO' : 'REPROVADO' ; 
 alert (situacao)
+
+let sorteio1 = Math.random() ;
+console.log (`O resultado do 1° sorteio foi ${sorteio1}`);
+
+let sorteio2 = parseInt(Math.random () *10 + 1);
+console.log(`O resultado do 2° sorteio foi ${sorteio2}`);
+
+let sorteio3 = parseInt(Math.random() * 1000 + 1);
+console.log(`O resultado do 3° sorteio foi ${sorteio3}`)
