@@ -23,9 +23,17 @@ while (chute != numeroSecreto){
     tentativas++
 }
 
-if ( tentativas > 1) {
-    // Template string é a junção de textos com valores de variáveis. Essa é uma das maneiras de fazer isso em JavaScript
-    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
-} else {
-    alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa`);
-}
+//operador ternário
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'
+alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}`);
+
+/*
+    com o operador ternário fica desnecessário o código if abaixo
+
+    if ( tentativas > 1) {
+        // Template string é a junção de textos com valores de variáveis. Essa é uma das maneiras de fazer isso em JavaScript
+        alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
+    } else {
+        alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa`);
+    }
+*/
