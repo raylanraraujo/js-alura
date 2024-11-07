@@ -26,7 +26,18 @@ exibirTextoNaTela('p' , 'Escolha um número de 0 a 10');
 //incluido a variavel numeroSecreto para exibir o número aleatório que foi gerado
 function verificarChute(){
     let chute = document.querySelector('input').value;
-    console.log(chute == numeroSecreto);
+    //console.log(chute == numeroSecreto);
+    if (chute == numeroSecreto) {
+        exibirTextoNaTela ('h1' , 'Acertou!');
+        exibirTextoNaTela ('p' , 'Você descobriu o número secreto.')
+    } else {
+        if (chute > numeroSecreto) {
+            exibirTextoNaTela ('p' , 'O número secreto é menor.')
+        } else {
+            exibirTextoNaTela ('p' , 'O número secreto é maior.')
+        }
+
+    }
 }
 
 // criado a função que gera um número aleatório e retorna esse valor (pois sem ele o número é gerado mas nao fica guardado em lugar algum)
