@@ -73,7 +73,15 @@ function maior(a , b) {
 }
 maior (a, b);
 
+/*
+    function encontrarMaior(a, b) {
+        return a > b ? a : b;
+    }
 
+    let maiorNumero = encontrarMaior(15, 9);
+    console.log(maiorNumero);
+*/
+//----------------------------exercicio 6------------------------------------
 let quadrado = parseInt(prompt('Digite um valor'));
 function elevadoDois(number) {
     let resultado = number * number;
@@ -81,3 +89,11 @@ function elevadoDois(number) {
 }
 
 elavadoDois(quadrado);
+/*
+    function quadrado(numero) {
+        return numero * numero;
+    }
+
+    let resultado = quadrado(2);
+    console.log(resultado); 
+*/
