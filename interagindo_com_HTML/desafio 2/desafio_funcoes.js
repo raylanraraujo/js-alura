@@ -50,6 +50,17 @@ function media( n1, n2, n3) {
 }
 media (n1, n2, n3);
 
+/*
+    function calcularMedia(a, b, c) {
+    return (a + b + c) / 3;
+    }
+
+    let media = calcularMedia(4, 7, 10);
+    console.log(media);
+*/
+
+
+//----------------------------exercicio 5------------------------------------
 let a = parseFloat(prompt('Digite o 1° valor'));
 let b = parseFloat(prompt('Digite o 2° valor'));
 function maior(a , b) {
