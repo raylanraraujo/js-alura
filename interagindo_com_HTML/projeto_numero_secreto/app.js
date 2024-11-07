@@ -1,5 +1,5 @@
 let numeroSecreto = gerarNumeroAleatorio ();
-
+let tentativas = 1;
 
 // let titulo = document.querySelector('h1');
 // titulo.innerHTML = 'Jogo do número secreto';
@@ -28,14 +28,20 @@ function verificarChute(){
     let chute = document.querySelector('input').value;
     //console.log(chute == numeroSecreto);
     if (chute == numeroSecreto) {
+
+        let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+        let mensagemTentativas = `Você acertou o número secreto com ${tentativas} ${palavraTentativa}`;
+     
+
         exibirTextoNaTela ('h1' , 'Acertou!');
-        exibirTextoNaTela ('p' , 'Você descobriu o número secreto.');
+        exibirTextoNaTela ('p' , mensagemTentativas);
     } else {
         if (chute > numeroSecreto) {
             exibirTextoNaTela ('p' , 'O número secreto é menor.');
         } else {
             exibirTextoNaTela ('p' , 'O número secreto é maior.');
         }
+        tentativas++
     }
 }
 
