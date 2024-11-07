@@ -17,9 +17,12 @@ function exibirTextoNaTela(tag , texto) {
 }
 
 //função chamada com parâmetros especificados na tela
-exibirTextoNaTela('h1' , 'Jogo do número secreto');
-exibirTextoNaTela('p' , 'Escolha um número de 0 a 10');
+function mensagemInicial() {
+    exibirTextoNaTela('h1' , 'Jogo do número secreto');
+    exibirTextoNaTela('p' , 'Escolha um número de 0 a 10');
+}
 
+mensagemInicial();
 
 //a função é responsável por executar alguma ação dentro do nosso programa. Por padrão e por convenção, é ideal determinar que as funções tenham apenas uma responsabilidade.
 //função SEM PARÂMETROS NEM RETORNO
@@ -35,6 +38,7 @@ function verificarChute(){
 
         exibirTextoNaTela ('h1' , 'Acertou!');
         exibirTextoNaTela ('p' , mensagemTentativas);
+        document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         if (chute > numeroSecreto) {
             exibirTextoNaTela ('p' , 'O número secreto é menor.');
@@ -42,6 +46,7 @@ function verificarChute(){
             exibirTextoNaTela ('p' , 'O número secreto é maior.');
         }
         tentativas++
+        limparCampo();
     }
 }
 
@@ -49,4 +54,18 @@ function verificarChute(){
 //função SEM PARÂMETRO, mas COM RETORNO
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 10 + 1);
+}
+
+function limparCampo() {
+    chute = document.querySelector('input');
+    chute.value = '';
+}
+
+function reiniciarJogo() {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = 1;
+    mensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disabled', true);
+
 }
