@@ -5,11 +5,12 @@ function olaMundo(){
 olaMundo();
 
 //----------------------------exercicio 2------------------------------------
-saudacao(nome);
+
 let nome = prompt('Digite seu nome');
 function saudacao (nome){
     console.log(`Olá, ${nome}`);
 }
+saudacao(nome);
 /*
 resoluçao do exercicio 2
     function exibirOlaNome(nome) {
