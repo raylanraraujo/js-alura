@@ -1,4 +1,5 @@
 let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio ();
 let tentativas = 1;
 
@@ -54,7 +55,11 @@ function verificarChute(){
 // criado a função que gera um número aleatório e retorna esse valor (pois sem ele o número é gerado mas nao fica guardado em lugar algum)
 //função SEM PARÂMETRO, mas COM RETORNO
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() * 4 + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantidadeElementosNaLista = listaDeNumerosSorteados.length;
+    if(quantidadeElementosNaLista == numeroLimite) {
+        listaDeNumerosSorteados = [];
+    }
     
     if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
         return gerarNumeroAleatorio();
