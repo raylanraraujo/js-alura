@@ -41,6 +41,12 @@ function areaPerimetoro(raio) {
     let areaCirculo = Math.PI * raio * raio; 
     return console.log(`O perímetro é: ${perimetroCirculo} m.\nA área é: ${areaCirculo} m²`)
 }
-
-
 areaPerimetoro(4);
+
+function tabuada(numero) {
+    for ( i = 1 ; i<=10; i++) {
+        let res = numero * i 
+        console.log(`${numero} x ${i} = ${res}`)
+    }
+}
+tabuada(5)
