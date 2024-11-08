@@ -19,12 +19,14 @@ exibirNaTela ( '.ex6' , 'Crie uma função que mostre na tela a tabuada de um n�
 
 
 
-function calcular( ) {
+function calcular(a , b ) {
     let peso = parseFloat(document.querySelector('.imc__input__peso').value);
     let altura = parseFloat(document.querySelector ( '.imc__input__altura').value);
-    console.log (`Peso: ${peso}`);
-    console.log(`Altura: ${altura}`);
-    let imc = peso / (altura * altura);
+    a = peso;
+    b = altura;
+    console.log (`Peso: ${a}`);
+    console.log(`Altura: ${b}`);
+    let imc = a / (b * b);
     console.log(`O imc calculado é ${imc.toFixed(2)}`);
     
     
@@ -33,4 +35,18 @@ function calcular( ) {
 
 
 
+function fatorial () {
+    let fatorial = parseInt(document.querySelector('.fatorial_numero').value);
+    let c = fatorial;
+    
+    console.log(`O valor do fatorial é ${fatorial}`);
+    console.log(`O valor de c é ${c}`)
+    console.log('ok');
+
+    
+
+    
+    
+}
+console.log(resultadoFatorial)
 
